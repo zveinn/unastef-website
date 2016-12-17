@@ -1,0 +1,102 @@
+@font-face {
+    font-family: "Linotype Didot Roman Oldstyle Figures";
+        src: url("../fonts/52830d10c9b5e2ef26909a2ab8d39a67.eot"); /* IE9*/
+        src: url("../fonts/52830d10c9b5e2ef26909a2ab8d39a67.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+        url("../fonts/52830d10c9b5e2ef26909a2ab8d39a67.woff2") format("woff2"), /* chrome、firefox */
+        url("../fonts/52830d10c9b5e2ef26909a2ab8d39a67.woff") format("woff"), /* chrome、firefox */
+        url("../fonts/52830d10c9b5e2ef26909a2ab8d39a67.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+        url("../fonts/52830d10c9b5e2ef26909a2ab8d39a67.svg#Linotype Didot Roman Oldstyle Figures") format("svg"); /* iOS 4.1- */
+}
+
+body {
+    background: rgba(246,242,231,1);
+    background: -moz-linear-gradient(45deg, rgba(246,242,231,1) 0%, rgba(254,254,246,1) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(246,242,231,1)), color-stop(100%, rgba(254,254,246,1)));
+    background: -webkit-linear-gradient(45deg, rgba(246,242,231,1) 0%, rgba(254,254,246,1) 100%);
+    background: -o-linear-gradient(45deg, rgba(246,242,231,1) 0%, rgba(254,254,246,1) 100%);
+    background: -ms-linear-gradient(45deg, rgba(246,242,231,1) 0%, rgba(254,254,246,1) 100%);
+    background: linear-gradient(45deg, rgba(246,242,231,1) 0%, rgba(254,254,246,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f2e7', endColorstr='#fefef6', GradientType=1 );
+    min-width: 320px;
+}
+
+h1 {
+    font-family: "Linotype Didot Roman Oldstyle Figures", Georgia, sans-serif;
+    color: #c0356c;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: normal;
+    font-size: 100px;
+    margin: 50px 0 15px 0;
+}
+
+.social-media {
+    text-align: center;
+    font-size: 48px;
+}
+
+    .social-media a {
+        text-decoration: none;
+        margin-left: 35px;
+        color: #c0356c;
+    }
+
+        .social-media a:first-child {
+            margin-left: 0;
+        }
+
+        .social-media a:hover {
+            color: #902751;
+        }
+
+        .social-media a:focus {
+            color: #601A36;
+        }
+
+#image-container {
+    position: absolute; bottom: 0; left: 0; right: 0;
+    font-size: 0;
+    text-align: center;
+}
+
+    #image-container img {
+        width: auto; height: calc(60vh);
+    }
+
+@media only screen
+and (max-height: 720px)
+{
+
+    h1 {
+        font-size: 80px;
+    }
+
+    .social-media {
+        font-size: 36px;
+    }
+
+}
+
+@media only screen
+and (max-height: 600px)
+{
+
+    h1 {
+        margin-top: 20px;
+    }
+
+}
+
+@media only screen
+and (max-width: 440px)
+{
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .social-media {
+        font-size: 28px;
+    }
+
+}
