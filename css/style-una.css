@@ -9,20 +9,13 @@
 }
 
 body {
-    background: rgba(246,242,231,1);
-    background: -moz-linear-gradient(45deg, rgba(246,242,231,1) 0%, rgba(254,254,246,1) 100%);
-    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(246,242,231,1)), color-stop(100%, rgba(254,254,246,1)));
-    background: -webkit-linear-gradient(45deg, rgba(246,242,231,1) 0%, rgba(254,254,246,1) 100%);
-    background: -o-linear-gradient(45deg, rgba(246,242,231,1) 0%, rgba(254,254,246,1) 100%);
-    background: -ms-linear-gradient(45deg, rgba(246,242,231,1) 0%, rgba(254,254,246,1) 100%);
-    background: linear-gradient(45deg, rgba(246,242,231,1) 0%, rgba(254,254,246,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f2e7', endColorstr='#fefef6', GradientType=1 );
-    min-width: 320px;
+    background: #eef1ea;
+  
 }
 
 h1 {
     font-family: "Linotype Didot Roman Oldstyle Figures", Georgia, sans-serif;
-    color: #c0356c;
+    color: black;
     text-transform: uppercase;
     text-align: center;
     font-weight: normal;
@@ -33,34 +26,54 @@ h1 {
 .social-media {
     text-align: center;
     font-size: 48px;
+    z-index: 9;
+    display:block;
+    position: relative;
 }
 
     .social-media a {
         text-decoration: none;
         margin-left: 35px;
-        color: #c0356c;
+        color:black;
+        z-index: 9;
+        position: relative;
     }
 
         .social-media a:first-child {
             margin-left: 0;
+            z-index: 9;
         }
 
         .social-media a:hover {
-            color: #902751;
+            color: lightblue;
+            z-index: 9;
+   
         }
 
         .social-media a:focus {
-            color: #601A36;
+            color:lightblue;
+            z-index: 9;
+    
+        }
+
+        .transparent {
+            zoom: 1;
+            filter: alpha(opacity=50);
+            opacity: 0.5;
         }
 
 #image-container {
-    position: absolute; bottom: 0; left: 0; right: 0;
+    position: absolute; top: 0px; left: 0px;
     font-size: 0;
     text-align: center;
+    z-index: 1;
+
 }
 
     #image-container img {
-        width: auto; height: calc(60vh);
+        width: auto; 
+        height: 100%;
+        z-index: 1;
     }
 
 @media only screen
@@ -69,10 +82,15 @@ and (max-height: 720px)
 
     h1 {
         font-size: 80px;
+        z-index: 9;
+        position: relative;
     }
 
     .social-media {
         font-size: 36px;
+        z-index: 9;
+        display:block;
+        position: relative;
     }
 
 }
@@ -83,6 +101,8 @@ and (max-height: 600px)
 
     h1 {
         margin-top: 20px;
+        z-index: 9;
+        position: relative;
     }
 
 }
@@ -93,10 +113,15 @@ and (max-width: 440px)
 
     h1 {
         font-size: 50px;
+        z-index: 9;
+        position: relative;
     }
 
     .social-media {
         font-size: 28px;
+        z-index: 9;
+        display:block;
+        position: relative;
     }
 
 }
